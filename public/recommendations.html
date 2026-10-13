@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recommended for You | MoodSphere</title>
+    <link rel="stylesheet" href="/app.css" />
+  </head>
+  <body>
+    <div class="nav" id="topNav">
+      <div class="brand"><span class="logoDot"></span> MoodSphere</div>
+      <div class="navLinks">
+        <a class="pill" href="/dashboard.html">Music</a>
+        <a class="pill" href="/recommendations.html">Recommended for You</a>
+        <a class="pill" href="/privacy.html">Privacy</a>
+        <button id="logoutBtn" class="pill pillDanger">Logout</button>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="card">
+        <div class="cardInner">
+          <h2 class="cardTitle">Recommended for You</h2>
+          <p class="cardSub">Cross-domain recommendations driven by inferred mood.</p>
+        </div>
+        <div class="cardInner" id="moodPanel"></div>
+      </div>
+
+      <div class="card" style="margin-top:18px">
+        <div class="cardInner">
+          <div class="row" style="justify-content:space-between; align-items:center">
+            <div class="recSectionTitle">
+              <img class="recSectionIcon" src="https://source.unsplash.com/64x64/?music" alt="" onerror="this.onerror=null;this.src='/assets/recs/placeholder.svg'" />
+              <h3 class="cardTitle">Music</h3>
+            </div>
+            <div class="row" style="gap:10px; align-items:center">
+              <span class="badge" id="nowPlayingChip">Now playing: —</span>
+              <span class="badge" id="dominantChip">Dominant: —</span>
+            </div>
+          </div>
+        </div>
+        <div class="cardInner">
+          <div class="sectionGrid" id="secMusic"></div>
+        </div>
+      </div>
+
+      <div class="card" style="margin-top:18px">
+        <div class="cardInner">
+          <div class="recSectionTitle">
+            <img id="moviesCoverIcon" class="recSectionIcon" src="https://source.unsplash.com/64x64/?cinema" alt="" onerror="this.onerror=null;this.src='/assets/recs/placeholder.svg'" />
+            <h3 class="cardTitle">Movies</h3>
+          </div>
+        </div>
+        <div class="cardInner">
+          <div class="sectionGrid" id="secMovies"></div>
+        </div>
+      </div>
+
+      <div class="card" style="margin-top:18px">
+        <div class="cardInner">
+          <div class="recSectionTitle">
+            <img id="shoppingCoverIcon" class="recSectionIcon" src="https://source.unsplash.com/64x64/?shopping" alt="" onerror="this.onerror=null;this.src='/assets/recs/placeholder.svg'" />
+            <h3 class="cardTitle">Shopping</h3>
+          </div>
+        </div>
+        <div class="cardInner">
+          <div class="sectionGrid" id="secShop"></div>
+        </div>
+      </div>
+
+      <div class="notice" style="margin-top:18px" id="explain"></div>
+    </div>
+
+    <script type="module" src="/js/recommendations.js"></script>
+  </body>
+</html>

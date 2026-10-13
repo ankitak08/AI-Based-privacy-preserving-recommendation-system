@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Privacy | MoodSphere</title>
+    <link rel="stylesheet" href="/app.css" />
+  </head>
+  <body>
+    <div class="nav">
+      <div class="brand"><span class="logoDot"></span> MoodSphere</div>
+      <div class="navLinks">
+        <a class="pill" href="/dashboard.html">Music</a>
+        <a class="pill" href="/recommendations.html">Recommended for You</a>
+        <a class="pill" href="/privacy.html">Privacy</a>
+        <button id="logoutBtn" class="pill pillDanger">Logout</button>
+      </div>
+    </div>
+
+    <div class="container" style="max-width:980px">
+      <div class="card">
+        <div class="cardInner">
+          <h2 class="cardTitle">Privacy</h2>
+          <p class="cardSub">This project is designed to avoid storing personal content data.</p>
+        </div>
+        <div class="cardInner">
+          <div class="stack">
+            <div class="notice">
+              Stored per user:
+              <div style="margin-top:8px" class="stack">
+                <div>- user_id (random internal id)</div>
+                <div>- username + password hash (for login)</div>
+              </div>
+            </div>
+            <div class="notice">
+              Not stored:
+              <div style="margin-top:8px" class="stack">
+                <div>- exact song titles</div>
+                <div>- browsing history</div>
+                <div>- real audio</div>
+                <div>- email/phone/address</div>
+                <div>- mood history (mood is inferred in-session to generate recommendations)</div>
+              </div>
+            </div>
+            <div class="row">
+              <button id="clearBtn" class="btn btnDanger">Clear my session profile</button>
+              <div id="clearMsg" class="notice" style="display:none; flex: 1"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" style="margin-top:18px">
+        <div class="cardInner">
+          <h3 class="cardTitle">Current mood snapshot</h3>
+          <p class="cardSub">For transparency.</p>
+        </div>
+        <div class="cardInner" id="moodPanel"></div>
+      </div>
+    </div>
+
+    <script type="module" src="/js/privacy.js"></script>
+  </body>
+</html>

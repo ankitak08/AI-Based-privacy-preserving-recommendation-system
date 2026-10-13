@@ -1,0 +1,16 @@
+{
+  "name": "federated-layer",
+  "version": "1.0.0",
+  "description": "Isolated Federated Learning orchestration layer for MoodSphere (black-box, FedAvg)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "train": "node server.js 3 1"
+  },
+  "keywords": ["federated", "learning", "fedavg", "privacy"],
+  "author": "MoodSphere FL Layer",
+  "license": "MIT",
+  "engines": {
+    "node": ">=14"
+  }
+}

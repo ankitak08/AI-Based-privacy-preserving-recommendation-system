@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MoodSphere</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              bg: '#070B12',
+              panel: '#0B1220',
+              stroke: 'rgba(255,255,255,0.10)',
+              muted: 'rgba(255,255,255,0.70)',
+              accent: '#22d3ee',
+              accent2: '#14b8a6'
+            },
+            boxShadow: {
+              glow: '0 0 0 1px rgba(255,255,255,0.06), 0 20px 60px rgba(0,0,0,0.55)'
+            }
+          }
+        }
+      };
+    </script>
+  </head>
+  <body class="min-h-screen bg-bg text-white">
+    <div class="absolute inset-0 -z-10">
+      <div class="absolute inset-0 bg-[radial-gradient(900px_circle_at_20%_10%,rgba(34,211,238,0.16),transparent_45%),radial-gradient(700px_circle_at_85%_15%,rgba(20,184,166,0.14),transparent_45%),radial-gradient(900px_circle_at_50%_90%,rgba(34,211,238,0.10),transparent_50%)]"></div>
+      <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/40"></div>
+    </div>
+
+    <header class="sticky top-0 z-30 backdrop-blur bg-bg/80 border-b border-stroke">
+      <div class="mx-auto max-w-6xl px-6 py-4 flex items-center justify-between">
+        <a href="/" class="flex items-center gap-3">
+          <span class="h-9 w-9 rounded-xl bg-gradient-to-br from-accent to-accent2"></span>
+          <span class="text-lg font-semibold tracking-tight">MoodSphere</span>
+        </a>
+
+        <div id="authControls" class="flex items-center gap-3">
+          <button id="btnSignIn" class="px-4 py-2 rounded-xl border border-stroke bg-white/0 hover:bg-white/5 transition" type="button">Sign In</button>
+          <button id="btnSignUp" class="px-4 py-2 rounded-xl bg-accent text-black font-semibold hover:brightness-110 transition" type="button">Sign Up</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="mx-auto max-w-6xl px-6 pt-14 pb-10">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+          <div class="space-y-6">
+            <div class="inline-flex items-center gap-2 rounded-full border border-stroke bg-white/5 px-3 py-1 text-sm text-muted">
+              <span class="h-2 w-2 rounded-full bg-accent"></span>
+              Privacy-first mood inference
+            </div>
+
+            <h1 class="text-4xl lg:text-5xl font-semibold tracking-tight leading-[1.05]">
+              Discover content that actually fits how you feel
+            </h1>
+
+            <p class="text-lg text-muted max-w-xl">
+              MoodSphere silently learns your mood from how you use music and recommends the best songs, movies and products — no quizzes, no manual mood selection.
+            </p>
+
+            <div class="flex flex-col sm:flex-row gap-3 sm:items-center">
+              <button id="btnTryDemo" type="button" class="px-5 py-3 rounded-2xl bg-accent text-black font-semibold hover:brightness-110 transition shadow-glow">
+                Get Started
+              </button>
+              <button id="btnHow" type="button" class="px-5 py-3 rounded-2xl border border-stroke bg-white/0 hover:bg-white/5 transition">
+                How it works
+              </button>
+              <a href="/privacy.html" class="text-sm text-muted hover:text-white transition sm:ml-2">Privacy</a>
+            </div>
+
+            <p class="text-sm text-muted">
+              We never store exact songs or personal data — only abstract mood profiles.
+            </p>
+          </div>
+
+          <div class="relative">
+            <div class="absolute -inset-6 bg-gradient-to-br from-accent/15 to-accent2/10 blur-2xl rounded-[40px]"></div>
+            <div class="relative rounded-[26px] border border-stroke bg-panel shadow-glow overflow-hidden">
+              <div class="p-5 border-b border-stroke flex items-center justify-between">
+                <div class="flex items-center gap-2">
+                  <div class="h-2.5 w-2.5 rounded-full bg-white/20"></div>
+                  <div class="h-2.5 w-2.5 rounded-full bg-white/20"></div>
+                  <div class="h-2.5 w-2.5 rounded-full bg-white/20"></div>
+                </div>
+                <div class="text-xs text-muted">Music dashboard (preview)</div>
+              </div>
+
+              <div class="p-5">
+                <div class="flex items-center justify-between">
+                  <div class="space-y-1">
+                    <div class="text-sm text-muted">Now playing</div>
+                    <div class="text-lg font-semibold">Your Library Mix</div>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <div class="h-9 w-9 rounded-xl bg-white/5 border border-stroke"></div>
+                    <div class="h-9 w-9 rounded-xl bg-white/5 border border-stroke"></div>
+                    <div class="h-9 w-9 rounded-xl bg-white/5 border border-stroke"></div>
+                  </div>
+                </div>
+
+                <div class="mt-5 grid grid-cols-1 gap-3">
+                  <div class="rounded-2xl border border-stroke bg-white/4 p-4 hover:bg-white/6 transition">
+                    <div class="flex items-center gap-3">
+                      <div class="h-11 w-11 rounded-xl bg-gradient-to-br from-accent/40 to-accent2/30 border border-stroke"></div>
+                      <div class="flex-1">
+                        <div class="font-semibold">Track A</div>
+                        <div class="text-sm text-muted">Artist • 3:12</div>
+                      </div>
+                      <div class="h-6 w-16 rounded-full bg-white/5 border border-stroke"></div>
+                    </div>
+                  </div>
+                  <div class="rounded-2xl border border-stroke bg-white/4 p-4 hover:bg-white/6 transition">
+                    <div class="flex items-center gap-3">
+                      <div class="h-11 w-11 rounded-xl bg-gradient-to-br from-accent2/35 to-accent/25 border border-stroke"></div>
+                      <div class="flex-1">
+                        <div class="font-semibold">Track B</div>
+                        <div class="text-sm text-muted">Artist • 2:48</div>
+                      </div>
+                      <div class="h-6 w-16 rounded-full bg-white/5 border border-stroke"></div>
+                    </div>
+                  </div>
+                  <div class="rounded-2xl border border-stroke bg-white/4 p-4 hover:bg-white/6 transition">
+                    <div class="flex items-center gap-3">
+                      <div class="h-11 w-11 rounded-xl bg-gradient-to-br from-white/10 to-white/5 border border-stroke"></div>
+                      <div class="flex-1">
+                        <div class="font-semibold">Track C</div>
+                        <div class="text-sm text-muted">Artist • 4:01</div>
+                      </div>
+                      <div class="h-6 w-16 rounded-full bg-white/5 border border-stroke"></div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="mt-6 rounded-2xl border border-stroke bg-black/20 p-4">
+                  <div class="flex items-center justify-between text-sm text-muted">
+                    <span>Mood signal</span>
+                    <span class="text-white/90">Updating live</span>
+                  </div>
+                  <div class="mt-3 h-2 rounded-full bg-white/10 overflow-hidden">
+                    <div class="h-full w-2/3 bg-gradient-to-r from-accent to-accent2"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mx-auto max-w-6xl px-6 py-10">
+        <div class="flex items-end justify-between gap-8">
+          <div>
+            <h2 class="text-2xl font-semibold tracking-tight">One mood signal. Three kinds of recommendations.</h2>
+            <p class="text-muted mt-2 max-w-2xl">MoodSphere adapts your suggestions in real time based on interaction signals, not surveys.</p>
+          </div>
+        </div>
+
+        <div class="mt-7 grid grid-cols-1 md:grid-cols-3 gap-5">
+          <div class="rounded-2xl border border-stroke bg-panel p-6 hover:-translate-y-1 transition duration-300">
+            <div class="h-10 w-10 rounded-xl bg-gradient-to-br from-accent to-accent2 text-black flex items-center justify-center font-bold">M</div>
+            <h3 class="mt-4 text-lg font-semibold">Music</h3>
+            <p class="mt-2 text-muted">Learns from play, skip, and replay patterns to surface songs that match your moment.</p>
+          </div>
+          <div class="rounded-2xl border border-stroke bg-panel p-6 hover:-translate-y-1 transition duration-300">
+            <div class="h-10 w-10 rounded-xl bg-gradient-to-br from-accent to-accent2 text-black flex items-center justify-center font-bold">F</div>
+            <h3 class="mt-4 text-lg font-semibold">Movies</h3>
+            <p class="mt-2 text-muted">Turns the same mood signal into film picks that fit your energy—comfort, calm, or hype.</p>
+          </div>
+          <div class="rounded-2xl border border-stroke bg-panel p-6 hover:-translate-y-1 transition duration-300">
+            <div class="h-10 w-10 rounded-xl bg-gradient-to-br from-accent to-accent2 text-black flex items-center justify-center font-bold">S</div>
+            <h3 class="mt-4 text-lg font-semibold">Shopping</h3>
+            <p class="mt-2 text-muted">Suggests products that align with how you feel—without tracking personal identity details.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="how" class="mx-auto max-w-6xl px-6 py-12">
+        <div class="rounded-3xl border border-stroke bg-panel p-8">
+          <h2 class="text-2xl font-semibold tracking-tight">How it works</h2>
+          <div class="mt-7 grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="rounded-2xl border border-stroke bg-white/3 p-6">
+              <div class="text-sm text-muted">Step 1</div>
+              <div class="mt-2 text-lg font-semibold">Use music naturally</div>
+              <p class="mt-2 text-muted">Play, pause, skip, replay. MoodSphere observes interaction patterns during your session.</p>
+            </div>
+            <div class="rounded-2xl border border-stroke bg-white/3 p-6">
+              <div class="text-sm text-muted">Step 2</div>
+              <div class="mt-2 text-lg font-semibold">Infer a mood vector</div>
+              <p class="mt-2 text-muted">Signals are translated into an abstract mood profile—no manual selection required.</p>
+            </div>
+            <div class="rounded-2xl border border-stroke bg-white/3 p-6">
+              <div class="text-sm text-muted">Step 3</div>
+              <div class="mt-2 text-lg font-semibold">Recommend across domains</div>
+              <p class="mt-2 text-muted">The same mood vector powers live recommendations for songs, movies, and products.</p>
+            </div>
+          </div>
+
+          <div class="mt-7 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+            <p class="text-sm text-muted">We never store exact songs or personal data — only abstract mood profiles.</p>
+            <button id="btnTryDemo2" type="button" class="px-5 py-3 rounded-2xl bg-accent text-black font-semibold hover:brightness-110 transition">
+              Open MoodSphere
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="border-t border-stroke">
+      <div class="mx-auto max-w-6xl px-6 py-10 flex flex-col md:flex-row gap-6 items-start md:items-center justify-between">
+        <div class="text-sm text-muted">© <span id="year"></span> MoodSphere</div>
+        <div class="flex flex-wrap gap-x-6 gap-y-2 text-sm">
+          <a class="text-muted hover:text-white transition" href="#">About</a>
+          <a class="text-muted hover:text-white transition" href="/privacy.html">Privacy</a>
+          <a class="text-muted hover:text-white transition" href="#">Terms</a>
+          <a class="text-muted hover:text-white transition" href="mailto:contact@moodsphere.local">Contact</a>
+        </div>
+      </div>
+    </footer>
+
+    <div id="modalRoot" class="hidden" aria-hidden="true">
+      <div class="fixed inset-0 bg-black/60 backdrop-blur-sm"></div>
+      <div class="fixed inset-0 flex items-center justify-center p-6">
+        <div id="modalDialog" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-describedby="modalSub" class="w-full max-w-md rounded-3xl border border-stroke bg-panel shadow-glow">
+          <div class="p-6 border-b border-stroke flex items-center justify-between">
+            <div>
+              <div id="modalTitle" class="text-lg font-semibold">Sign In</div>
+              <div id="modalSub" class="text-sm text-muted">Use your account to continue.</div>
+            </div>
+            <button id="btnCloseModal" type="button" class="h-10 w-10 rounded-xl border border-stroke bg-white/0 hover:bg-white/5 transition" aria-label="Close">✕</button>
+          </div>
+
+          <div class="p-6">
+            <form id="authForm" class="space-y-4">
+              <div id="authNameGroup">
+                <label class="block text-sm text-muted" for="authName">Name</label>
+                <input
+                  id="authName"
+                  name="name"
+                  autocomplete="name"
+                  class="mt-2 w-full rounded-xl border border-stroke bg-black/20 px-4 py-3 outline-none focus:ring-2 focus:ring-accent/60"
+                />
+              </div>
+              <div>
+                <label class="block text-sm text-muted" for="authUsername">Email</label>
+                <input
+                  id="authUsername"
+                  name="email"
+                  type="email"
+                  autocomplete="email"
+                  class="mt-2 w-full rounded-xl border border-stroke bg-black/20 px-4 py-3 outline-none focus:ring-2 focus:ring-accent/60"
+                />
+              </div>
+              <div>
+                <label class="block text-sm text-muted" for="authPassword">Password</label>
+                <input
+                  id="authPassword"
+                  name="password"
+                  type="password"
+                  autocomplete="current-password"
+                  class="mt-2 w-full rounded-xl border border-stroke bg-black/20 px-4 py-3 outline-none focus:ring-2 focus:ring-accent/60"
+                />
+              </div>
+
+              <div id="authError" class="hidden text-sm text-red-300"></div>
+
+              <button
+                id="authSubmit"
+                type="submit"
+                class="w-full px-5 py-3 rounded-2xl bg-accent text-black font-semibold hover:brightness-110 transition"
+              >
+                Continue
+              </button>
+
+              <div class="text-sm text-muted text-center">
+                <button id="authSwitch" type="button" class="text-white/90 hover:text-white underline">Need an account? Sign up</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="/js/landing.js"></script>
+  </body>
+</html>

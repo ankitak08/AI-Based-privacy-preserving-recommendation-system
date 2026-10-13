@@ -1,0 +1,16 @@
+{
+  "events": [
+    { "event_type": "click_genre", "genre": "sad", "timestamp": "2025-02-08T12:00:00Z", "duration_ms": 0 },
+    { "event_type": "play", "genre": "sad", "item_id": "track_sad_01", "timestamp": "2025-02-08T12:01:00Z", "duration_ms": 210000 },
+    { "event_type": "play_time", "genre": "sad", "item_id": "track_sad_01", "timestamp": "2025-02-08T12:02:00Z", "duration_ms": 210000 },
+    { "event_type": "play", "genre": "sad", "item_id": "track_sad_02", "timestamp": "2025-02-08T12:03:00Z", "duration_ms": 190000 },
+    { "event_type": "play_time", "genre": "sad", "item_id": "track_sad_02", "timestamp": "2025-02-08T12:04:00Z", "duration_ms": 190000 },
+    { "event_type": "click_genre", "genre": "romantic", "timestamp": "2025-02-08T12:05:00Z", "duration_ms": 0 },
+    { "event_type": "play", "genre": "romantic", "item_id": "track_rom_01", "timestamp": "2025-02-08T12:06:00Z", "duration_ms": 140000 },
+    { "event_type": "play_time", "genre": "romantic", "item_id": "track_rom_01", "timestamp": "2025-02-08T12:07:00Z", "duration_ms": 140000 },
+    { "event_type": "skip", "genre": "energetic", "item_id": "track_eng_01", "timestamp": "2025-02-08T12:08:00Z", "duration_ms": 0 },
+    { "event_type": "click_genre", "genre": "energetic", "timestamp": "2025-02-08T12:09:00Z", "duration_ms": 0 },
+    { "event_type": "play", "genre": "energetic", "item_id": "track_eng_01", "timestamp": "2025-02-08T12:10:00Z", "duration_ms": 130000 },
+    { "event_type": "play_time", "genre": "energetic", "item_id": "track_eng_01", "timestamp": "2025-02-08T12:11:00Z", "duration_ms": 130000 }
+  ]
+}

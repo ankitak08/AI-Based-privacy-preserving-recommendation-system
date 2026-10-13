@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music | MoodSphere</title>
+    <link rel="stylesheet" href="/app.css" />
+  </head>
+  <body>
+    <div class="nav">
+      <div class="brand"><span class="logoDot"></span> MoodSphere</div>
+      <div class="navLinks">
+        <a class="pill" href="/dashboard.html">Music</a>
+        <a class="pill" id="openRecsLink" href="/recommendations.html">Recommended for You</a>
+        <a class="pill" id="openPrivacyLink" href="/privacy.html">Privacy</a>
+        <button id="logoutBtn" class="pill pillDanger">Logout</button>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="musicShell">
+        <div class="card" style="margin-bottom:14px">
+          <div class="cardInner">
+            <div class="row" style="align-items:center; justify-content:space-between">
+              <div>
+                <h2 class="cardTitle">Music</h2>
+                <p class="cardSub">Pick a genre. Mood is inferred from behavior (play time, clicks, replays, skips).</p>
+              </div>
+              <span class="badge" id="whoami">Not signed in</span>
+            </div>
+          </div>
+          <div class="genreTabs" id="genreList"></div>
+        </div>
+
+        <div class="musicTop">
+          <div class="card nowPanel">
+            <div class="cardInner">
+              <div class="row" style="align-items:center; justify-content:space-between">
+                <div>
+                  <h2 class="cardTitle" id="mainTitle">Romantic</h2>
+                  <p class="cardSub">Now playing</p>
+                </div>
+                <div class="badge" id="moodChip">Mood: —</div>
+              </div>
+            </div>
+
+            <div class="nowBody">
+              <div class="nowCoverWrap">
+                <img id="nowCoverImg" class="nowCoverImg" src="/assets/recs/placeholder.svg" alt="" onerror="this.onerror=null;this.src='/assets/recs/placeholder.svg'" />
+              </div>
+
+              <div class="nowInfo">
+                <div class="nowTitle" id="nowPlaying">Select a track</div>
+                <div class="small" id="nowMeta">—</div>
+                <a id="nowCoverSource" class="trackSource" href="/assets/recs/placeholder.svg" target="_blank" rel="noreferrer">Image source</a>
+              </div>
+
+              <div class="nowProgress">
+                <input id="seek" type="range" min="0" max="30000" step="500" value="0" />
+                <div class="row" style="justify-content:space-between">
+                  <div class="small" id="tLeft">0:00</div>
+                  <div class="small" id="tRight">0:30</div>
+                </div>
+              </div>
+
+              <div class="nowControls">
+                <button class="iconBtn" id="replayBtn" type="button" aria-label="Replay">↻</button>
+                <button class="iconBtn iconBtnPlay" id="playToggleBtn" type="button" aria-label="Play">▶</button>
+                <button class="iconBtn" id="skipBtn" type="button" aria-label="Skip">⏭</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="card queuePanel">
+            <div class="cardInner">
+              <div class="row" style="align-items:center; justify-content:space-between">
+                <h2 class="cardTitle" style="margin:0">Queue</h2>
+              </div>
+            </div>
+            <div class="queueList" id="queueList"></div>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:14px">
+          <div class="cardInner">
+            <div class="row" style="align-items:center; justify-content:space-between">
+              <div>
+                <h2 class="cardTitle">Browse</h2>
+                <p class="cardSub">Tap a cover to start playing.</p>
+              </div>
+            </div>
+          </div>
+          <div class="trackGrid" id="trackGrid"></div>
+        </div>
+
+        <div class="notice" style="margin-top:12px">
+          Tip: play a single genre for ~1–2 minutes to see mood drift. Then switch genre and observe recommendations update.
+        </div>
+      </div>
+    </div>
+
+    <div class="overlay" id="recsOverlay" aria-hidden="true">
+      <div class="overlayBackdrop" id="recsOverlayBackdrop"></div>
+      <div class="overlayPanel" role="dialog" aria-modal="true" aria-label="Recommendations">
+        <div class="overlayHeader">
+          <div style="font-weight:800">Recommendations</div>
+          <button class="iconBtn" id="closeRecsBtn" type="button" aria-label="Close">✕</button>
+        </div>
+        <iframe class="overlayFrame" id="recsFrame" title="Recommendations"></iframe>
+      </div>
+    </div>
+
+    <div class="overlay" id="privacyOverlay" aria-hidden="true">
+      <div class="overlayBackdrop" id="privacyOverlayBackdrop"></div>
+      <div class="overlayPanel" role="dialog" aria-modal="true" aria-label="Privacy">
+        <div class="overlayHeader">
+          <div style="font-weight:800">Privacy</div>
+          <button class="iconBtn" id="closePrivacyBtn" type="button" aria-label="Close">✕</button>
+        </div>
+        <iframe class="overlayFrame" id="privacyFrame" title="Privacy"></iframe>
+      </div>
+    </div>
+
+    <script type="module" src="/js/dashboard.js"></script>
+  </body>
+</html>

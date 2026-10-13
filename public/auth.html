@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login | MoodSphere</title>
+    <link rel="stylesheet" href="/app.css" />
+  </head>
+  <body>
+    <div class="nav">
+      <div class="brand"><span class="logoDot"></span> MoodSphere</div>
+      <div class="navLinks"></div>
+    </div>
+
+    <div class="container" style="max-width:860px">
+      <div class="grid" style="grid-template-columns: 1fr 1fr">
+        <div class="card">
+          <div class="cardInner">
+            <h2 class="cardTitle">Login</h2>
+            <p class="cardSub">Simple authentication. Mood is inferred from interactions, not selected.</p>
+            <div class="stack" style="margin-top:12px">
+              <input id="loginEmail" class="input" placeholder="Email" type="email" autocomplete="email" />
+              <input id="loginPass" class="input" placeholder="Password" type="password" autocomplete="current-password" />
+              <button id="loginBtn" class="btn btnPrimary">Login</button>
+              <div id="loginMsg" class="notice" style="display:none"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="cardInner">
+            <h2 class="cardTitle">Sign up</h2>
+            <p class="cardSub">Creates an account. Recommendations adapt from behavior without storing mood history.</p>
+            <div class="stack" style="margin-top:12px">
+              <input id="signupName" class="input" placeholder="Full Name" autocomplete="name" />
+              <input id="signupEmail" class="input" placeholder="Email" type="email" autocomplete="email" />
+              <input id="signupPass" class="input" placeholder="Password" type="password" autocomplete="new-password" />
+              <button id="signupBtn" class="btn btnPrimary">Create account</button>
+              <div id="signupMsg" class="notice" style="display:none"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" style="margin-top:18px">
+        <div class="cardInner">
+          <div class="kpi">
+            <div class="kpiBox">
+              <div class="kpiLabel">Moods tracked</div>
+              <div class="kpiValue">Romantic / Energetic / Calm / Sad</div>
+            </div>
+            <div class="kpiBox">
+              <div class="kpiLabel">Privacy</div>
+              <div class="kpiValue">No song titles stored</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="/js/auth.js"></script>
+  </body>
+</html>

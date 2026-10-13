@@ -1,0 +1,237 @@
+{
+  "users": [
+    {
+      "user_id": "u_10oighpfmkwzmw5d",
+      "username": "yash",
+      "password_hash": "$2a$10$ikyWAq/3iIV2IAWaCwIgj.4/8dFP0xMfDKiqIcBwTvvlMAdIw0C42"
+    },
+    {
+      "user_id": "u_afvhk3olmkwzpp5m",
+      "username": "ther",
+      "password_hash": "$2a$10$bdUwhgAEby9dZ5jqPs5DZeEcwyAuSpjlh22U62CrFE4cahyqOD0Gi"
+    },
+    {
+      "user_id": "u_4z9sfgt6mkx0ft14",
+      "username": "rry",
+      "password_hash": "$2a$10$Gg57FCFU/YiEK2fdjwzbS.D40J9sZfF3vS7qFxcSdSgOO/FqqT5Se"
+    },
+    {
+      "user_id": "u_pck5314gmkx1v92b",
+      "username": "i",
+      "password_hash": "$2a$10$BUQ/W0PFsliEBT0xf7917.wp/QEzwWNlXb2OtV4YWDNsTsShowJg2"
+    },
+    {
+      "user_id": "u_oe3duxn6mkx25eir",
+      "username": "e",
+      "password_hash": "$2a$10$jTWoCHdSrSTP5wb.Owf7YeAOaJl.42zr1.b6uIXcPCuoSwxKkA9Hi"
+    },
+    {
+      "user_id": "u_hnuo3ba3mkx2k0e1",
+      "username": "fr",
+      "password_hash": "$2a$10$qU82Tb/fVUD7WwbsnUmZrO6NtcQTPBEz55mk1xE8zZ2tbKKx8hMoK"
+    },
+    {
+      "user_id": "u_nqpoyakfmkx2t63e",
+      "username": "hb",
+      "password_hash": "$2a$10$3NtB1EDSBsovPDFA0TiKgO06a/fG66mqyMGlpEThhdKTjqWDVDFv."
+    },
+    {
+      "user_id": "u_m968ebh4mky6y17w",
+      "username": "h",
+      "password_hash": "$2a$10$v8qtNpRn7a55CacCH89WreOH79EFHL6RbpgMHWIIjFLQMQ4z7obfG"
+    },
+    {
+      "user_id": "u_5f6ufsgmmky7py0n",
+      "username": "yashlad@gmail.com",
+      "password_hash": "$2a$10$/LH7AMTFQjfUh/m9pz5XO.HZyDq1Z18YlatSKXplfdcvKaQ.Dw9EW"
+    },
+    {
+      "user_id": "u_n1w2gq22mky8vjzx",
+      "username": "ui",
+      "password_hash": "$2a$10$M/ks0S6j9ah2BMzyB5HMgumAZDYnm/niRjckYm3b1nLyn2iRreNWy"
+    },
+    {
+      "user_id": "u_cdr9itd7mkybh09k",
+      "username": "ddg",
+      "password_hash": "$2a$10$A7OpAGG/ZqYEYg/OZ90q6u/PSmL6nqYOQd1FuYJ4GtVrwFj7RL1D."
+    },
+    {
+      "user_id": "u_tsg49r04mkycexj7",
+      "username": "o",
+      "password_hash": "$2a$10$hu0excpi3Nx/wOdmdc.LaO3a58aHYbFzrSCN6gvmXpmy0RcF/NKom"
+    },
+    {
+      "user_id": "u_akgk7qfxmkye1t3f",
+      "username": "gn",
+      "password_hash": "$2a$10$NTyGZ1p99Hk.ivfcQwn02eUyTS3Mk6i0ikOEAknZ60pjyBi.uhexS"
+    },
+    {
+      "user_id": "u_7cohf0wzmkyensvf",
+      "username": "gr",
+      "password_hash": "$2a$10$AMeaqokzKnolVd86I4yCQeQHttLx3PFQ5KsmwtYoNYX.U1g5Zs8am"
+    },
+    {
+      "user_id": "u_5f7nm5t6ml0y7hwf",
+      "username": "Xyzzy@gmail.com",
+      "password_hash": "$2a$10$W.z9svfHo4A3YRULArMiuOS3FOl0oE3XJVagcBSJmKtaqatzAlFHu"
+    },
+    {
+      "user_id": "u_trmcwncgml0yj1gt",
+      "username": "yu@gmail.com",
+      "password_hash": "$2a$10$6hZgRJe/G5uzP/mfcuz/WuwOsrVDwwOSpAvgDLT/NEyK.dxK6F8w."
+    },
+    {
+      "user_id": "u_u9lybjqqml418n4t",
+      "username": "vg",
+      "password_hash": "$2a$10$PRd1Cu9k.ZzI06XBapAe7OBUYK6o7TAmHONGgW1ve7p8Am2.An0GG"
+    },
+    {
+      "user_id": "u_otu3r64wml41j3k3",
+      "username": "v",
+      "password_hash": "$2a$10$oqthX/D4jJVyq5ZWeBLgz.RwDjXMeXASfyRt4QlAGCt4PR9LK8PoC"
+    },
+    {
+      "user_id": "u_xor32757ml41x3pf",
+      "username": "j",
+      "password_hash": "$2a$10$Qc/jSJAuaMut8vS0/540QOvx.Hxl.XP8r6LsYU4Eu7k40RLK6h.xe"
+    },
+    {
+      "user_id": "u_22k3qyngml42g1c5",
+      "username": "s",
+      "password_hash": "$2a$10$9JwXHs9.E6KeS0F2cGQH4e4bydLYWI/zpMVlKAnO0454N2vcRTBlG"
+    },
+    {
+      "user_id": "u_5m7ag5j7ml42s2tl",
+      "username": "ht",
+      "password_hash": "$2a$10$sqkBoS/fZt7E0x8fCRx6ceBlCjhC.pJkQWXzVDC56/foj5WKFXVra"
+    },
+    {
+      "user_id": "u_r9qqlpgtml43vdb4",
+      "username": "ju",
+      "password_hash": "$2a$10$iS/4c7jC8w0NqsiEIGwBLuj31kGxujs1OuPCbvQygLNLWN.05UCkS"
+    },
+    {
+      "user_id": "u_fatzw8o8ml44apsa",
+      "username": "vf",
+      "password_hash": "$2a$10$mMd57ffBF7wrXI7rILdujeKszNvo1IRebMT.1/2xIpdgU.GsmJdZi"
+    },
+    {
+      "user_id": "u_fic0p91oml44ir9z",
+      "username": "hj",
+      "password_hash": "$2a$10$WJK9/9JxZiwQS8E/B/JgR.mP2R.fogpUv.CfBIYRJOl2YVhCA3iNi"
+    },
+    {
+      "user_id": "u_lqgyf32yml44zvu1",
+      "username": "y",
+      "password_hash": "$2a$10$v0W1JTCz3JrQjyZ8fbziUunMvpm6QR7VgvW09SbiX2qw8Pwtmvm2i"
+    },
+    {
+      "user_id": "u_j3lgi1sjml457eqg",
+      "username": "htt",
+      "password_hash": "$2a$10$lirlYq45Pm91EsLoAZSZmujDV7DeZNfnkzxhuHiExV8HgpvcFYKAa"
+    },
+    {
+      "user_id": "u_72gi8t9hml45e7r4",
+      "username": "yh",
+      "password_hash": "$2a$10$0U0VKhYd7cvqNEHb0WSFRewd4ypDNQOZ2NXndwULuqqsB/7g5NvZi"
+    },
+    {
+      "user_id": "u_bk9z0kgyml45lz0a",
+      "username": "ujj",
+      "password_hash": "$2a$10$wzXpkl/hFdRncj1zL1RcPeQU61RFUi8kzLVbLzIiOuKWyeLJ22ex2"
+    },
+    {
+      "user_id": "u_i8ne25buml45q8lv",
+      "username": "y6",
+      "password_hash": "$2a$10$WZQP6Kj.fLbKEghJIGU.i.cQQl/OOPOaEItNW8eIdf3330Vfu/9Yi"
+    },
+    {
+      "user_id": "u_mw1ykq47ml45y1kj",
+      "username": "df",
+      "password_hash": "$2a$10$ZGRrIKCT9kg6ul9lbR1aXu37zMrHBTcXpHwFIfzi5pCTgkORSWEwG"
+    },
+    {
+      "user_id": "u_5m27m9usml468zgt",
+      "username": "sc",
+      "password_hash": "$2a$10$5vZKAyUVcG4l7c6WZ1FYOu5evN/AX9t.cPgmh6r3Y4Hz0FwtpjUF6"
+    },
+    {
+      "user_id": "u_k9hkk3apml46e7op",
+      "username": "hf",
+      "password_hash": "$2a$10$kgqnMGSoRckWYsKa/0AkEuQYL.XD0uSrxEVlAwQoyJyWBKQdvdJmO"
+    },
+    {
+      "user_id": "u_82mo5dzuml46mk6l",
+      "username": "f",
+      "password_hash": "$2a$10$e6QQYl8B2CzN5LmEy6iIoepjzrfmXF7.kLVyEgti.JnvO2NLdN81q"
+    },
+    {
+      "user_id": "u_653nhud7mldo02j3",
+      "username": "c",
+      "password_hash": "$2a$10$cisTyzZJD9VH5xCkna3WkeA8mBTaNbfumUrdXsZjNa9j50R9OpS/W"
+    },
+    {
+      "user_id": "u_azuoi8odmldoc6h2",
+      "username": "fdf",
+      "password_hash": "$2a$10$DFVCyZALLBn.Cd8XyrBvSOKTDT8CZKokCj6osyguOYsDTObtB9h6G"
+    },
+    {
+      "user_id": "u_2vkf5ia6mldond75",
+      "username": "g",
+      "password_hash": "$2a$10$Ty3LFXhqXC.p/Ik3x.YFDezJ6RQUkdJqgQszw5GYX6l/B5Ydn3sEy"
+    },
+    {
+      "user_id": "u_yaqj3qn5mldqltr9",
+      "username": "ttg",
+      "password_hash": "$2a$10$Q.JnkMv5E84GM8DE1tBMh.MrCACz3uBd6G0hUBoNREeKMn9FpAbVm"
+    },
+    {
+      "user_id": "u_06p8gb72mm52b3yj",
+      "username": "adityajanjire123456@gmail.com",
+      "password_hash": "$2a$10$jh2IxScu/4ZI5D2VEgj7RekXG.Z8owXKKACH9qH5heLl5TWeYSjoS"
+    },
+    {
+      "user_id": "u_7lw71094mm52vvpt",
+      "username": "adityajanjire1234567@gmail.com",
+      "password_hash": "$2a$10$CnUZXZQ8vatraz0dIXGMjeVgxdlDjkzz5AHeto1TzjvlCUM5Vj/66"
+    },
+    {
+      "user_id": "u_hgzbj6nhmmrre07f",
+      "name": "Aditya Janjire",
+      "email": "adityajanjire123456@gmail.com",
+      "username": "Aditya Janjire",
+      "password_hash": "$2a$10$OnpQ5yk4aVYI230V25wOzuLIr0W6HEi8Btmsm.JR1HPUbNhRzaici",
+      "role": "user",
+      "created_at": "2026-03-15T12:56:51.339Z"
+    },
+    {
+      "user_id": "u_edtr3eflmp5tj7ia",
+      "name": "Ankita Amol Khater",
+      "email": "khaterankita@gmail.com",
+      "username": "Ankita Amol Khater",
+      "password_hash": "$2a$10$YXO8hBEJKWL0t7SfhjAV6eU8O9U/.fVNtroNt8VmbyO9R3OOL2Mea",
+      "role": "user",
+      "created_at": "2026-05-14T18:25:04.450Z"
+    }
+  ],
+  "movies": [],
+  "playlists": [
+    {
+      "id": "pl_fxtu86v0mmrtralv",
+      "user_id": "u_hgzbj6nhmmrre07f",
+      "item_ids": [
+        "track_rom_01",
+        "track_rom_02",
+        "track_rom_03",
+        "track_rom_04",
+        "track_rom_05",
+        "track_rom_06",
+        "track_rom_07",
+        "track_rom_08",
+        "track_rom_09"
+      ],
+      "created_at": "2026-03-15T14:03:10.579Z",
+      "updated_at": "2026-03-15T14:03:10.579Z"
+    }
+  ]
+}
